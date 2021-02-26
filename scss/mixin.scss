@@ -1,0 +1,53 @@
+@import 'vars.scss';
+
+@mixin flexCented {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin posotionCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+@mixin headingLight{
+    font: 3.438rem 'Roboto', sans-serif;
+    font-weight: 900;
+    color: $text-Light;
+}
+@mixin heading($color: 'primary') {
+    font: 2.875rem 'Roboto', sans-serif;
+    font-weight: 400;
+    @if $color == 'primary' {
+        color: $text-primary-color;
+    }
+    @if $color == 'light' {
+        color: $text-Light;
+    }
+    
+}
+@mixin boldText {
+    font: 1rem 'Roboto', sans-serif;
+    font-weight: 700;
+    color: $text-secondary-color;
+}   
+@mixin boldTextLight {
+    font: 1rem 'Roboto', sans-serif;
+    font-weight: 700;
+    color: $text-secondary-color;
+} 
+@mixin headingSubTitle {
+    font: 1.375rem 'Roboto', sans-serif;
+    font-weight: 700;
+    color: $text-primary-color;
+}
+@mixin regularText {
+    font: 1.125rem 'Roboto', sans-serif;
+    font-weight: 400;
+    color: $text-secondary-color;
+}    

@@ -1,0 +1,22 @@
+
+*{
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.intro-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+    background: url(img-header/Bg2.svg) 0 0 no-repeat, url(img-header/Bg1.svg) 0 50% no-repeat;    
+}
